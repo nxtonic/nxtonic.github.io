@@ -85,6 +85,8 @@ p {
 .header-portrait {
   display: block;
   text-align: center;
+  width: 175px;
+  height: 175px;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
 }
