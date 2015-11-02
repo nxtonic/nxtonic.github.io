@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100);
-@import 'reset.css';
 @import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+@import 'reset.css';
 
 body {
   font-family: "Roboto Mono", "Montserrat", "Helvetica Neue", "Arial", sans-serif;
@@ -12,7 +12,7 @@ body {
 
 .box {
   max-width: 90%;
-  width: 900px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -50,7 +50,6 @@ h2 {
   font-size: 2rem;
   letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
 }
 
 h5 {
@@ -125,16 +124,15 @@ p {
 }
 
 .tool-icons {
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin: 2rem auto 0;
+  width: 600px;
+  max-width: 100%;
 }
 
 .tool-icons img {
-  margin: 1.5rem;
-  max-height: 75px;
-  width: 12.5%;
+  margin: 2rem;
+  max-height: 50px;
+  width: 50px;
   vertical-align: middle;
 }
 
