@@ -74,6 +74,8 @@ p {
 .social-icons a {
   margin: 0 1rem;
   color: #fff;
+  text-decoration: none;
+  border: 0px transparent solid;
 }
 
 .header-wrapper {
@@ -138,6 +140,12 @@ p {
   vertical-align: middle;
 }
 
+a {
+  text-decoration: none;
+  padding-bottom: 0.1em;
+  border-bottom: 0.125em solid;
+}
+
 .align-left {
   text-align: left;
 }
@@ -148,6 +156,10 @@ p {
 
 .align-right {
   text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
 }
 
 .bg {
