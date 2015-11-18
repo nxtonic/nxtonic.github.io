@@ -9,7 +9,7 @@ body {
   text-align: left;
   line-height: 1.5;
 
-  /*font-family: "Futura", "Roboto Mono", "Montserrat", "Helvetica Neue", "Arial", sans-serif;*/
+  /*font-family: "Roboto Mono", "Montserrat", "Helvetica Neue", "Arial", sans-serif;*/
 }
 
 .box {
@@ -59,14 +59,77 @@ h5 {
   margin-bottom: 0.75rem;
 }
 
+b {
+  font-weight: bold;
+}
+
+blockquote {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+blockquote img {
+  margin: 0.5rem 0 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+hr {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+
 iframe {
   margin-bottom: 2rem;
 }
 
-p {
+p{
   margin-bottom: 1rem;
   line-height: 1.75;
   text-align: justify;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+  list-style-type: square;
+}
+
+em {
+  font-style: italic;
+}
+
+a.wrap {
+  text-decoration: none;
+  color: inherit;
+  border: 0px transparent solid;
+}
+
+span.label {
+  display: inline-block;
+  width: auto;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  float: right;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 0.2em;
+  font-size: 0.5em;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+span.label.label-under-construction {
+  background: #fef57e;
+  color: #111;
 }
 
 .social-icons {
