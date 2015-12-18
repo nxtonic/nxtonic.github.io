@@ -38,6 +38,17 @@ section {
   padding: 10em 1em;
 }
 
+@media (max-width: 600px) {
+
+  header {
+    padding: 8em 1em;
+  }
+
+  section {
+    padding: 4em 1em;
+  }
+}
+
 section:nth-of-type(2n) {
   background-color: #fafafa;
 }
@@ -124,7 +135,7 @@ span.label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
+  cursor: default;
 }
 
 span.label.label-under-construction {
@@ -152,10 +163,10 @@ span.label.label-under-construction {
 .header-portrait {
   display: block;
   text-align: center;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 1.5rem;
-  border-radius: 50%;
+  border-radius: 2%;
 }
 
 .header-name {
