@@ -163,8 +163,9 @@ span.label.label-under-construction {
 .header-portrait {
   display: block;
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
+  border-radius: 200px;
   margin: 0 auto 1.5rem;
 }
 
