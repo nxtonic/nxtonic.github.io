@@ -10,22 +10,25 @@
     <header>
       <div class="box">
         <div class="header-wrapper">
-          <img class="header-portrait" width="175px" height="175px" src="./static/img/portrait.jpg">
-          <h3 class="header-name">@nxtonic</h3>
+          <!-- <img class="header-portrait" src="./static/img/portrait.jpg"/> -->
+          <img class="header-portrait" src="./static/img/logotype.svg"/>
+          <div class="header-text">
+            <h3 class="header-name">Angus McMillan</h3>
+            <div class="clearfix"></div>
+            <h3 class="header-profession">developer / designer</h3>
+          </div>
           <div class="clearfix"></div>
-          <h4 class="header-profession">Developer / Designer</h4>
         </div>
       </div>
     </header>
-    <section class="bg bg-4">
+    <section>
       <div class="box">
-        <h2 class="align-left">about me</h2>
-        <p class="align-justify">
-          Hello, I am Angus McMillan. I create lightweight & efficient web-based software
-          to improve business performance and user experience. This means that YOU get to
-          spend less time doing work, and more time outside in the sunshine, living with
-          the people you care about.
-        </p>
+        <blockquote>
+          <h2 class="align-left">about me</h2>
+          <p class="align-justify">
+            Hi, my name is Angus. I'm a developer + designer born and bred in <em>Melbourne, Australia</em>.
+          </p>
+        </blockquote>
       </div>
     </section>
     <section>
@@ -80,55 +83,23 @@
         <blockquote>
           <h5><a class="wrap" href="http://inewsletter.co/home"><b>inewsletter</b></a> by naavi</h5>
           <a class="wrap" href="http://inewsletter.co/home"><img src="./static/img/inewsletter.png"></a>
-          <p>
+          <p class="align-justify">
             inewsletter is a product by naavi which puts school newsletters online, simplifying the production and dissemination of school affairs to the local community.
           </p>
-          <p>
+          <p class="align-justify">
             I worked with naavi by creating the landing page based on a provided photoshop drawing, adding interactivity and responsiveness features from my own imagination.
-          </p>
-        </blockquote>
-        <hr/>
-        <blockquote>
-          <span class="label label-under-construction">Under Construction</span>
-          <h5><a class="wrap" href="http://github.com/squaremelon/spend"><b>spend</b></a> by squaremelon</h5>
-          <a class="wrap" href="http://github.com/squaremelon/spend"><img src="./static/img/spend.png"></a>
-          <p>
-            spend is a web application for helping to budget your monthly expenses. We came up with this idea after realising that payment models for a lot of things in our lives are now moving over to subscriptions.
-          </p>
-          <p>
-            To combat this issue, we are creating a really simple interface to calculate how much money you have coming in per month, and then help you to divide that into savings, subscriptions and other kinds of bills.
           </p>
         </blockquote>
       </div>
     </section>
-    <!-- <section>
-      <div class="box">
-        <h2 class="align-left">some experiments</h2>
-        <blockquote>
-          <h5><a class="wrap" href="http://codepen.io/nxtonic/pen/yybNeo"><b>minimal</b></a> clock</h5>
-          <p>
-            A somewhat avant-garde clock I made with the snap.svg library. Not the easiest thing to read, but it is definitely pretty minimal.
-          </p>
-          <iframe height='400' scrolling='no' src='http://codepen.io/nxtonic/embed/preview/yybNeo/?height=400&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/nxtonic/pen/yybNeo/'>Minimal SVG Clock</a> by Angus McMillan (<a href='http://codepen.io/nxtonic'>@nxtonic</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-        </blockquote>
-        <hr/>
-        <blockquote>
-          <h5><a class="wrap" href="http://codepen.io/nxtonic/pen/gbZNKJ"><b>interactive</b> squaremelon logo</a></h5>
-          <p>
-            A slightly more lively version of the squaremelon logo. Hover to activate the awesome!
-          </p>
-          <iframe height='400' scrolling='no' src='http://codepen.io/nxtonic/embed/preview/gbZNKJ/?height=400&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/nxtonic/pen/gbZNKJ/'>Interactive SQUAREMELON</a> by Angus McMillan (<a href='http://codepen.io/nxtonic'>@nxtonic</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-        </blockquote>
-      </div>
-    </section> -->
+    <section class="section-minimal">
+      <div style="height: 500px;" id="map"></div>
+    </section>
     <section>
       <div class="box">
         <h2 class="align-left">get in touch</h2>
         <p class="align-justify">
-          I'd love to hear from you, feel free to get in contact by
-          <a title="tweet to @nxtonic" href="https://twitter.com/intent/tweet?screen_name=nxtonic&text=Hey!" target="_blank">sending a tweet!</a>
+          I'd love to hear from you, feel free to kick it old-school and <a href="mailto:nxtonic@gmail.com">write me</a>.
         </p>
       </div>
     </section>
@@ -139,7 +110,12 @@
           <a title="github" href="http://github.com/nxtonic"><i class="icon icon-big ion-social-github"></i></a>
           <a title="codepen" href="http://codepen.io/nxtonic"><i class="icon icon-big ion-social-codepen"></i></a>
         </div>
+        <span class="footer-copyright">
+          <span class="mirror-text">©</span> copyleft 2016 – Angus McMillan
+        </span>
       </div>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="./static/js/gmaps.js"></script>
   </body>
 </html>
