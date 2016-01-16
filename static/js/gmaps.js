@@ -4,7 +4,8 @@ function initialize() {
       "featureType": "road",
       "elementType": "labels",
       "stylers": [
-        { "visibility": "off" }
+        { "visibility": "off" },
+        { "grayscale": 100 }
       ]
     },{
       "featureType": "road",
@@ -48,7 +49,7 @@ function initialize() {
 
   var mapOptions = {
     center: new google.maps.LatLng(-37.817708, 144.967302),
-    zoom: 13,
+    zoom: 11,
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,
@@ -75,7 +76,7 @@ function initialize() {
   google.maps.event.addDomListener(window, 'resize', function() {
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");
-    map.setCenter(center); 
+    map.setCenter(center);
   });
 
   }

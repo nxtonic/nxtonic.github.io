@@ -21,7 +21,7 @@ body {
 
 .box {
   max-width: 90%;
-  width: 800px;
+  width: 750px;
   overflow-x: hidden;
   margin: 0 auto;
 }
@@ -315,7 +315,7 @@ a {
 }
 
 .bg-6 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/ggKMDmjkGZ5ZK/giphy.gif');
+  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/HteV6g0QTNxp6/giphy.gif');
   background-attachment: fixed;
   color: #fff;
   background-size: cover;
@@ -323,6 +323,13 @@ a {
 
 .bg-7 {
   background-image: url('../img/mask.png'), url('https://media.giphy.com/media/xTiTnzvzlEj5vD3Tkk/giphy.gif');
+  background-attachment: fixed;
+  color: #fff;
+  background-size: cover;
+}
+
+.bg-8 {
+  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif');
   background-attachment: fixed;
   color: #fff;
   background-size: cover;
