@@ -11,7 +11,7 @@ function initialize() {
       "featureType": "road",
       "elementType": "geometry",
       "stylers": [
-        { "weight": 2 },
+        { "weight": 3 },
         { "visibility": "simplified" }
       ]
     },{
@@ -49,7 +49,7 @@ function initialize() {
 
   var mapOptions = {
     center: new google.maps.LatLng(-37.817708, 144.967302),
-    zoom: 11,
+    zoom: 13,
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,

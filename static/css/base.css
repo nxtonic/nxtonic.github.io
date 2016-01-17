@@ -1,4 +1,3 @@
-/*@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100);*/
 @import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 @import 'reset.css';
 
@@ -21,7 +20,7 @@ body {
 
 .box {
   max-width: 90%;
-  width: 750px;
+  width: 650px;
   overflow-x: hidden;
   margin: 0 auto;
 }
@@ -184,7 +183,7 @@ span.label.label-under-construction {
   display: block;
 }
 
-.header-portrait {
+.header-portrait, .header-logotype {
   display: block;
   float: left;
   margin-right: 1.25rem;
@@ -237,7 +236,7 @@ span.label.label-under-construction {
 }
 
 .massive {
-  font-size: 10em;
+  font-size: 3em;
   display: block;
 }
 
@@ -287,7 +286,7 @@ a {
 }
 
 .bg-2 {
-  background: url('../img/mask.png'), url('https://media.giphy.com/media/CDH0spsSaqQUg/giphy.gif');
+  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/CDH0spsSaqQUg/giphy.gif');
   background-attachment: fixed;
   color: #fff;
   background-size: cover;
