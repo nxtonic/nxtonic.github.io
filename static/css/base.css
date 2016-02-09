@@ -323,7 +323,7 @@ a {
   background-size: cover;
 }
 
-@media (min-width: 224px) {
+@media (min-width: 800px) {
 
   @-webkit-keyframes header {
     0% {
@@ -339,7 +339,8 @@ a {
     padding: 0;
     position: relative;
     background-color: #fff;
-    animation: header 30s infinite linear;
+    -webkit-animation: header 30s infinite linear;
+            animation: header 30s infinite linear;
     background-image: url("../img/header-texture.png");
   }
 
@@ -347,7 +348,8 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
   }
 
   .header-logotype {
