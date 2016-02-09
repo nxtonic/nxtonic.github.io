@@ -1,6 +1,10 @@
 @import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 @import 'reset.css';
 
+body, html {
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   color: #2a2a2a;
@@ -20,7 +24,7 @@ body {
 
 .box {
   max-width: 90%;
-  width: 650px;
+  width: 680px;
   overflow-x: hidden;
   margin: 0 auto;
 }
@@ -35,9 +39,9 @@ body {
 
 header {
   padding: 10em 1em;
+  box-sizing: border-box;
   background-color: #fff;
-  background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
 }
 
@@ -54,24 +58,13 @@ section {
   margin: 0;
 }
 
-@media (max-width: 600px) {
-
-  header {
-    padding: 8em 1em;
-  }
-
-  section {
-    padding: 4em 1em;
-  }
-}
-
 section:nth-of-type(2n) {
   background-color: #fafafa;
 }
 
 footer {
   padding: 5em 1em;
-  background-color: #3a3a3a;
+  background-color: #222;
   color: #fff;
 }
 
@@ -173,8 +166,8 @@ span.label.label-under-construction {
 }
 
 .social-icons a {
-  margin: 0 1rem;
-  color: #fff;
+  margin: 0 0.75em;
+  color: inherit;
   text-decoration: none;
   border: 0px transparent solid;
 }
@@ -201,7 +194,7 @@ span.label.label-under-construction {
 
 .header-name {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   letter-spacing: 0.025rem;
   line-height: 1.5;
   display: inline-block;
@@ -211,7 +204,8 @@ span.label.label-under-construction {
   letter-spacing: 0.1rem;
   line-height: 1.5;
   font-weight: 300;
-  color: #888;
+  font-size: 1em;
+  opacity: 0.75;
   display: inline-block;
 }
 
@@ -224,15 +218,10 @@ span.label.label-under-construction {
 
 .footer-copyright {
   display: block;
-  font-size: 9px;
-  letter-spacing: 0.05rem;
-  margin: 1rem auto 0;
+  font-size: 10px;
+  letter-spacing: 0.025rem;
+  margin: 0.75rem auto 0;
   text-align: center;
-}
-
-.mirror-text {
-  transform: rotateY(180deg);
-  display: inline-block;
 }
 
 .massive {
@@ -314,7 +303,7 @@ a {
 }
 
 .bg-6 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/HteV6g0QTNxp6/giphy.gif');
+  background-image: url('../img/mask.png'),  url('https://media.giphy.com/media/HteV6g0QTNxp6/giphy.gif');
   background-attachment: fixed;
   color: #fff;
   background-size: cover;
@@ -332,4 +321,59 @@ a {
   background-attachment: fixed;
   color: #fff;
   background-size: cover;
+}
+
+@media (min-width: 224px) {
+
+  @-webkit-keyframes header {
+    0% {
+      background-position: center top calc(50% + 412px);
+    }
+    100% {
+      background-position: center top calc(50% - 412px);
+    }
+  }
+
+  header {
+    height: 99%;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    animation: header 30s infinite linear;
+    background-image: url("../img/header-texture.png");
+  }
+
+  .header-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .header-logotype {
+    text-align: center;
+    margin: 0 auto 1.25rem;
+    height: 50%;
+    width: 50%;
+    float: none;
+    display: block;
+  }
+
+  .header-text {
+    text-align: center;
+    float: none;
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 8em 1em;
+  }
+
+  section {
+    padding: 4em 1em;
+  }
 }
