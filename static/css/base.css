@@ -5,14 +5,10 @@ body, html {
   height: 100%;
 }
 
-* {
-  transition: all 0.4s;
-}
-
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   color: #2a2a2a;
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   text-align: left;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +41,8 @@ header {
   padding: 10em 1em;
   box-sizing: border-box;
   background-color: #fff;
-  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -67,7 +64,7 @@ section:nth-of-type(2n) {
 }
 
 footer {
-  padding: 5em 1em;
+  padding: 4em 1em;
   background-color: #222;
   color: #fff;
 }
@@ -199,7 +196,7 @@ span.label.label-under-construction {
 }
 
 .header-name {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5em;
   letter-spacing: 0.025rem;
   line-height: 1.5;
@@ -209,7 +206,7 @@ span.label.label-under-construction {
 .header-profession {
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1em;
   opacity: 0.75;
   display: inline-block;
@@ -241,9 +238,9 @@ span.label.label-under-construction {
 }
 
 .tool-icons img {
-  margin: 2rem;
-  max-height: 50px;
-  width: 50px;
+  margin: 1.5em;
+  max-height: 2.5em;
+  width: 2.5em;
   vertical-align: middle;
 }
 
@@ -302,8 +299,9 @@ a {
 }
 
 .bg-5 {
-  background-image: url('../img/mask.png'), url('../img/woo.gif');
+  background-image: url('../img/mask.png'), url('../img/grain-overlay.png'), url('../img/portrait.jpg');
   background-attachment: fixed;
+  background-position: center center;
   color: #fff;
   background-size: cover;
 }
@@ -331,23 +329,13 @@ a {
 
 @media (min-width: 800px) {
 
-  @-webkit-keyframes header {
-    0% {
-      background-position: center top calc(50% + 412px);
-    }
-    100% {
-      background-position: center top calc(50% - 412px);
-    }
-  }
-
   header {
-    height: 99%;
+    height: 100%;
+    /*min-height: 600px;*/
     padding: 0;
     position: relative;
     background-color: #fff;
-    -webkit-animation: header 30s infinite linear;
-            animation: header 30s infinite linear;
-    background-image: url("../img/header-texture.png");
+    transition: background-color 0.2s ease;
   }
 
   .header-wrapper {
@@ -361,8 +349,8 @@ a {
   .header-logotype {
     text-align: center;
     margin: 0 auto 1.25rem;
-    height: 50%;
-    width: 50%;
+    height: 150px;
+    width: 150px;
     float: none;
     display: block;
   }
