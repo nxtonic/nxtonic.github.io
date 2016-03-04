@@ -363,6 +363,13 @@ a {
 
 }
 
+@media (max-width: 800px) {
+  .bg-5 {
+    background-image: none;
+    background-color: #222;
+  }
+}
+
 @media (max-width: 600px) {
 
   header {
