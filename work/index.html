@@ -1,0 +1,29 @@
+---
+layout: page-min
+title: previous projects
+---
+<section class="page-header">
+  <div class="box">
+    <h2 class="align-center">{{ page.title }}</h2>
+  </div>
+</section>
+<section class="page-content">
+  <div class="box markdown">
+    <div class="post-index">
+      {% assign list = site.pages | sort:"date" | reverse %}
+      {% for page in list %}
+        {% if page.categories contains 'work' %}
+          <div class="post">
+            <a class="name" href="{{ page.url }}">{{ page.title }}</a>
+            <span class="date">{{ page.date | date: "%d %B, %Y"}}</span>
+            <hr class="split"/>
+            <p class="excerpt">
+              {{ page.short_description | strip_newlines | strip_html | remove: "." | truncatewords: 100 }}
+              <a class="wrap" href="{{ page.url }}">&rarr;</a>
+            </p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

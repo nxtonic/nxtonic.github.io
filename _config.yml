@@ -1,0 +1,31 @@
+# @Author: nxtonic
+# @Date:   2016-05-17T19:41:32+10:00
+# @Last modified by:   nxtonic
+# @Last modified time: 2016-05-17T19:46:20+10:00
+
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: ~/nxtonic
+email: nxtonic@gmail.com
+description: > #
+  the incoherent ramblings of nxtonic
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://nxtonic.github.io" # the base hostname & protocol for your site
+twitter_username: nxtonic
+github_username:  nxtonic
+exclude:
+  - "resume"
+
+# Build settings
+timezone: Australia/Melbourne
+permalink: "/blog/:year/:categories/:title"
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM

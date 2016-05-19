@@ -89,7 +89,7 @@ h5 {
   margin-bottom: 0.75rem;
 }
 
-b {
+b, strong {
   font-weight: bold;
 }
 
@@ -338,6 +338,11 @@ a {
     transition: background-color 0.2s ease;
   }
 
+  header.min {
+    height: auto;
+    padding: 5em 1em;
+  }
+
   .header-wrapper {
     position: absolute;
     top: 50%;
@@ -355,10 +360,21 @@ a {
     display: block;
   }
 
+  header.min .header-logotype {
+    height: 50px;
+    margin: 0 auto 0.5rem;
+    width: 50px;
+  }
+
   .header-text {
     text-align: center;
     float: none;
     font-size: 1em;
+  }
+
+  header.min .header-text {
+    font-size: 0.5em;
+    /*display: none;*/
   }
 
 }

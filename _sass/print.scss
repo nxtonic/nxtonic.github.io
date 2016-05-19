@@ -1,0 +1,46 @@
+@page {
+  size: A4;
+  padding: 1cm 1cm 1cm;
+  box-sizing: border-box;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    background-color: transparent !important;
+    * {
+      background-color: transparent !important;
+      color: #1a1a1a;
+    }
+
+    *::before, *::after {
+      display: none;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  header, section {
+    page-break-inside: auto;
+    padding: 2.5em 1em;
+  }
+
+  section {
+    p, .post {
+      page-break-inside: avoid;
+    }
+
+    blockquote, code.highlighter-rouge, .highlighter-rouge {
+      border: 1px solid rgba(0,0,0,0.15);
+      background-color: transparent !important;
+    }
+  }
+
+  footer {
+    display: none;
+  }
+}

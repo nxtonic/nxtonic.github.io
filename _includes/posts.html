@@ -1,0 +1,28 @@
+<section>
+    <div class="box">
+      <a class="wrap align-center" href="{{site.baseurl}}blog">
+        <h2>blog posts</h2>
+      </a>
+      <hr/>
+    </div>
+    <div class="box markdown">
+      <div class="post-index">
+      {% for post in site.posts limit:5 %}
+      <div class="post">
+        <a class="name" href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%B %d %Y"}}</span>
+        <hr class="split"/>
+        <p class="excerpt">
+          {{ post.excerpt | strip_newlines | strip_html | truncatewords: 100 }}
+          <a class="wrap" href="{{ post.url }}">&rarr;</a>
+        </p>
+      </div>
+      {% endfor %}
+      </div>
+      {% if site.posts.size > 5 %}
+      <a href="{{site.baseurl}}blog">
+        <h5 class="align-center">more &rarr;</h5>
+      </a>
+      {% endif %}
+    </div>
+</section>

@@ -1,0 +1,18 @@
+---
+layout: page-min
+---
+<section class="post-header">
+  <div class="box align-center">
+    {% if page.icon %}
+      <img style="width: 10%" src="{{ page.icon }}"/>
+    {% endif %}
+    <a class="wrap" target="_blank" href="{{ page.reference_link }}">
+      <h2>{{ page.title }}</h2>
+    </a>
+  </div>
+</section>
+<section class="page-content">
+  <div class="box markdown">
+    {{ content }}
+  </div>
+</section>

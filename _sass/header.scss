@@ -1,0 +1,132 @@
+header {
+  padding: 10em 1em;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  & .box {
+    overflow: visible;
+  }
+
+  &.min {
+    height: auto;
+    padding: 3em 1em;
+
+    .header-text {
+      display: none;
+    }
+
+    .header-logotype {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  & .header-wrapper {
+    display: block;
+    overflow: visible;
+  }
+
+  & .header-portrait, .header-logotype {
+    display: block;
+    float: left;
+    margin-right: 1.25rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+  }
+
+  & .header-text {
+    float: left;
+    display: block;
+    text-align: left;
+  }
+
+  & .header-name {
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+    display: inline-block;
+  }
+
+  & .header-profession {
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1em;
+    opacity: 0.75;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 800px) {
+
+  header {
+    height: 100%;
+    /*min-height: 600px;*/
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+  }
+
+  header.min {
+    height: auto;
+    padding: 5em 1em;
+
+    .header-text {
+      display: none;
+    }
+  }
+
+  .header-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  .header-logotype {
+    text-align: center;
+    margin: 0 auto 1.25rem;
+    height: 150px;
+    width: 150px;
+    float: none;
+    display: block;
+  }
+
+  header.min .header-logotype {
+    height: 50px;
+    margin: 0 auto 0.5rem;
+    width: 50px;
+  }
+
+  .header-text {
+    text-align: center;
+    float: none;
+    font-size: 1em;
+  }
+
+  header.min .header-text {
+    font-size: 0.5em;
+    /*display: none;*/
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 8em 1em;
+  }
+
+  section {
+    padding: 4em 1em;
+  }
+}
