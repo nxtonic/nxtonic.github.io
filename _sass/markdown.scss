@@ -68,7 +68,7 @@
 
   ol {
     li {
-      list-style-type: decimal-leading-zero;
+      list-style-type: decimal;
     }
   }
 
@@ -146,5 +146,14 @@
     & * {
       width: 100%;
     }
+
+    & iframe {
+      margin-bottom: 2rem;
+    }
+
+    &.rounded * {
+      border-radius: 10px;
+    }
+
   }
 }

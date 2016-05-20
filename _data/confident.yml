@@ -21,8 +21,12 @@
   url: https://daringfireball.net/projects/markdown/
   image_url: http://svgporn.com/logos/markdown.svg
 
-- title: cli
+- title: terminal
   image_url: http://svgporn.com/logos/terminal.svg
+
+- title: bash
+  url: https://www.gnu.org/software/bash/
+  image_url: http://svgporn.com/logos/bash.svg
 
 - title: bower
   url: http://bower.io

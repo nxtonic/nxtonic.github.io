@@ -7,6 +7,10 @@ layout: default
 {% if site.posts.size >= 1 %}
   {% include posts.html %}
 {% endif %}
+{% assign list = site.work %}
+{% if site.work.size >= 1 %}
+  {% include work.html %}
+{% endif %}
 {% include quote.html %}
 {% include map.html %}
 {% include contact.html %}

@@ -19,9 +19,22 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://nxtonic.github.io" # the base hostname & protocol for your site
 twitter_username: nxtonic
 github_username:  nxtonic
-exclude:
-  - "resume"
-
+collections:
+  work:
+    output: true
+defaults:
+  -
+    scope:
+      path: "_work/**.md"
+      type: "work"
+    values:
+      categories: "work"
+      layout: "work"
+  -
+    scope:
+      path: ""
+    values:
+      author: "Angus McMillan"
 # Build settings
 timezone: Australia/Melbourne
 permalink: "/blog/:year/:categories/:title"

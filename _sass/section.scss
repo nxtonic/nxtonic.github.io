@@ -56,35 +56,51 @@ section {
   }
 }
 
-.bg-1 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/pQQRV5MHXPpqo/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
+@import "functions";
+
+$backgrounds: (
+  list: (
+    1: ( // matthew broderick - pout
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/pQQRV5MHXPpqo/giphy.gif'))
+    ),
+    2: ( // samuel l. jackson - cheeseburger
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/CDH0spsSaqQUg/giphy.gif'))
+    ),
+    3: ( // waynes world - hammer helmet
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/RcYF0rkGmmWWs/giphy.gif'))
+    ),
+    4: ( // matthew broderick - clicking
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/V61ogXFB3vPVe/giphy.gif'))
+    ),
+    5: ( // ron swanson - computer trash
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/HteV6g0QTNxp6/giphy.gif'))
+    ),
+    6: ( // ron swanson - phone hammer
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/xTiTnzvzlEj5vD3Tkk/giphy.gif'))
+    ),
+    7: ( // andy dwyer - excited
+      text-color: #fff,
+      images: (url('../img/mask.png'),url('https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif'))
+    )
+  )
+);
+
+@each $bg in map-keys(map-get($backgrounds, list)) {
+  .background-#{$bg} {
+    color: map-fetch($backgrounds, list $bg text-color);
+    background-image: to-string(map-fetch($backgrounds, list $bg images));
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
-.bg-2 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/CDH0spsSaqQUg/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.bg-3 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/RcYF0rkGmmWWs/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.bg-4 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/V61ogXFB3vPVe/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.bg-5 {
+.background-portrait {
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -101,25 +117,4 @@ section {
     z-index: -1;
     will-change: transform;
   }
-}
-
-.bg-6 {
-  background-image: url('../img/mask.png'),  url('https://media.giphy.com/media/HteV6g0QTNxp6/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.bg-7 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/xTiTnzvzlEj5vD3Tkk/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
-}
-
-.bg-8 {
-  background-image: url('../img/mask.png'), url('https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif');
-  background-attachment: fixed;
-  color: #fff;
-  background-size: cover;
 }

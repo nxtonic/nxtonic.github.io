@@ -9,10 +9,29 @@ layout: page-min
     <a class="wrap" target="_blank" href="{{ page.reference_link }}">
       <h2>{{ page.title }}</h2>
     </a>
+    <p>&bull; {{ page.date | date:"%B %Y" }} &bull;</p>
   </div>
 </section>
+{% assign p = content | strip_newlines | strip_html %}
+{% unless p.size == 0 %}
 <section class="page-content">
   <div class="box markdown">
     {{ content }}
   </div>
 </section>
+{% else %}
+<section class="page-content">
+  <div class="box markdown">
+    <div class="align-center">
+      <h3>I haven't done a write-up for this project yet.</h3>
+      <hr/>
+      <div class="full-width">
+        <img src="https://media.giphy.com/media/3BlItBedmyoAU/giphy.gif"/>
+      </div>
+      <hr/>
+      <h3>why not check out some of <a href="{{site.baseurl}}work">my other work</a>?</h3>
+      <h3>&macr;\_(&#12484;)_/&macr;</h3>
+    </div>
+  </div>
+</section>
+{% endunless %}
