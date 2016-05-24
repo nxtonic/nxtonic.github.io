@@ -1,7 +1,5 @@
 ---
 title: idea-factory
-layout: work
-categories: work
 short_description: A list of possible venture ideas for the budding entrepreneur.
 date: 2016-04-04 00:00:00 +0000
 reference_link: http://nxtonic.github.io/idea-factory/

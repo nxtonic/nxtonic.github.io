@@ -25,16 +25,16 @@ collections:
 defaults:
   -
     scope:
-      path: "_work/**.md"
-      type: "work"
-    values:
-      categories: "work"
-      layout: "work"
-  -
-    scope:
       path: ""
     values:
       author: "Angus McMillan"
+  -
+    scope:
+      path: "_work"
+      type: "work"
+    values:
+      categories: work
+      layout: work
 # Build settings
 timezone: Australia/Melbourne
 permalink: "/blog/:year/:categories/:title"

@@ -1,7 +1,5 @@
 ---
-layout: work
-categories: work
-title: magic 8
+title: magic8
 short_description: I made a magic 8 ball, just for a bit of fun.
 date: 2016-04-11 00:00:00 +0000
 reference_link: http://nxtonic.github.io/magic8
