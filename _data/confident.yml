@@ -24,10 +24,6 @@
 - title: terminal
   image_url: http://svgporn.com/logos/terminal.svg
 
-- title: bash
-  url: https://www.gnu.org/software/bash/
-  image_url: http://svgporn.com/logos/bash.svg
-
 - title: bower
   url: http://bower.io
   image_url: http://svgporn.com/logos/bower.svg
