@@ -7,23 +7,21 @@ layout: page-min
     <p>&bull; {{ page.date | date_to_long_string }} &bull;</p>
   </div>
 </section>
+
 <section class="post-content">
-  <main>
-    <div class="box markdown">
-      {{ content }}
-      {% assign p = content | strip_newlines %}
-      {% if p == "" %}
-      <div class="align-center">
-        <h3>this post has no content.</h3>
-        <hr/>
-        <div class="full-width">
-          <img src="https://media.giphy.com/media/jeXiz1RAvzX44/giphy.gif"/>
-        </div>
-        <hr/>
-        <h3>maybe try other posts?</h3>
-        <h3>&macr;\_(&#12484;)_/&macr;</h3>
-      </div>
-      {% endif %}
-    </div>
-  </main>
-</section>
+<main>
+<div class="box markdown">
+{{ content }}
+{% assign p = content | strip_newlines %}{% if p == "" %}
+<div class="align-center">
+<h3>the content is missing :/</h3>
+<hr/>
+<div class="full-width">
+<img src="https://media.giphy.com/media/jeXiz1RAvzX44/giphy.gif"/>
+</div>
+</div>{% endif %}
+</div>
+</main>
+</section>{% if page.comments %}
+{% unless p == "" %}
+{% include disqus.html %}{% endunless %}{% endif %}

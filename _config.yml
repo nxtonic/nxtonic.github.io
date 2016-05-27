@@ -14,11 +14,32 @@
 title: ~/nxtonic
 email: nxtonic@gmail.com
 description: > #
-  the incoherent ramblings of nxtonic
-baseurl: "/" # the subpath of your site, e.g. /blog
+  The personal website of Angus McMillan
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nxtonic.github.io" # the base hostname & protocol for your site
-twitter_username: nxtonic
-github_username:  nxtonic
+logo: "/static/img/logotype.svg"
+twitter:
+  username: nxtonic
+github:
+  username: nxtonic
+
+# Build settings
+timezone: Australia/Melbourne
+permalink: "/blog/:year/:month/:categories/:title/"
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+markdown: kramdown
+highlighter: rouge
+feed:
+  path: atom.xml
+kramdown:
+  input: GFM
+
+# Front matter defaults
 collections:
   work:
     output: true
@@ -30,15 +51,15 @@ defaults:
       author: "Angus McMillan"
   -
     scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  -
+    scope:
       path: "_work"
       type: "work"
     values:
       categories: work
       layout: work
-# Build settings
-timezone: Australia/Melbourne
-permalink: "/blog/:year/:categories/:title"
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM

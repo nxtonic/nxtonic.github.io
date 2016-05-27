@@ -4,13 +4,7 @@ layout: default
 {% include about.html %}
 {% include confident.html %}
 {% include learning.html %}
-{% if site.posts.size >= 1 %}
-  {% include posts.html %}
-{% endif %}
-{% assign list = site.work %}
-{% if site.work.size >= 1 %}
-  {% include work.html %}
-{% endif %}
+{% include listings.html %}
 {% include quote.html %}
 {% include map.html %}
 {% include contact.html %}

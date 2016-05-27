@@ -2,7 +2,7 @@
 layout: page-min
 title: "the blog"
 ---
-<section class="page-header">
+<section class="page-header background-coastal-breeze">
   <div class="box">
     <h2 class="align-center">{{ page.title }}</h2>
   </div>
@@ -39,7 +39,11 @@ title: "the blog"
         <span class="date">{{ post.date | date: "%B %d"}}</span>
         <hr class="split"/>
         <p class="excerpt">
+        {% if post.short_description %}
+          {{ post.short_description | strip_newlines | strip_html | truncate: 240 }}
+        {% else %}
           {{ post.excerpt | strip_newlines | strip_html | truncate: 240 }}
+        {% endif %}
           <a class="wrap" href="{{ post.url }}">&rarr;</a>
         </p>
       </div>

@@ -8,10 +8,10 @@
         {% when "work" %}
           {% assign up = "/work/" %}
         {% else %}
-          {% assign up = site.baseurl %}
+          {% assign up = site.baseurl | append: "/" %}
       {% endcase %}
       <a class="wrap" href="{{ up }}">
-        <img class="header-logotype" src="{{site.baseurl}}static/img/logotype.svg" />
+        <img class="header-logotype" src="{{site.baseurl}}/static/img/logotype.svg" />
       </a>
       <div class="header-text">
         <h3 class="header-name">{{site.data.author.first_name}} {{site.data.author.last_name}}</h3>

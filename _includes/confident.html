@@ -1,16 +1,11 @@
 <section>
   <div class="box">
     <h2 class="align-center">confident with...</h2>
-    <div class="tool-icons align-center">
-    {% for item in site.data.confident %}
-      {% if item.url %}
-        <a class="wrap" target="_blank" href="{{item.url}}">
-          <img title="{{item.title}}" src="{{item.image_url}}">
-        </a>
-      {% else %}
+    <div class="tool-icons align-center">{% for item in site.data.confident %}{% if item.url %}
+      <a class="wrap" target="_blank" href="{{item.url}}">
         <img title="{{item.title}}" src="{{item.image_url}}">
-      {% endif %}
-    {% endfor %}
+      </a>{% else %}
+      <img title="{{item.title}}" src="{{item.image_url}}">{% endif %}{% endfor %}
     </div>
   </div>
 </section>

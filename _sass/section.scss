@@ -31,6 +31,16 @@ section {
     margin: 0;
   }
 
+  &.half-size {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+    @media (max-width: 625px) {
+      width: 100%;
+    }
+  }
+
   &.post-header {
     & p {
       margin-bottom: 0;
@@ -60,6 +70,10 @@ section {
 
 $backgrounds: (
   list: (
+    "pink-sugar": (text-color: #fff, images: (linear-gradient(45deg, #D74177, #FFE98A))),
+    "fresh-papaya": (text-color: #fff, images: (linear-gradient(45deg, #ED1C24, #FCEE21))),
+    "coastal-breeze": (text-color: #fff, images: (linear-gradient(45deg, #00B7FF, #FFFFC7))),
+    "ocean-blue": (text-color: #fff, images: (linear-gradient(45deg, #262998, #4ed4ff))),
     1: ( // matthew broderick - pout
       text-color: #fff,
       images: (url('../img/mask.png'),url('https://media.giphy.com/media/pQQRV5MHXPpqo/giphy.gif'))
@@ -93,8 +107,8 @@ $backgrounds: (
 
 @each $bg in map-keys(map-get($backgrounds, list)) {
   .background-#{$bg} {
+    background: to-string(map-fetch($backgrounds, list $bg images));
     color: map-fetch($backgrounds, list $bg text-color);
-    background-image: to-string(map-fetch($backgrounds, list $bg images));
     background-attachment: fixed;
     background-size: cover;
   }
