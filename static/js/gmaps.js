@@ -1,54 +1,59 @@
 function initialize() {
 
-  var stylesArray = [{
-      "featureType": "road",
+  var stylesArray = [
+    {
+      "featureType": "all",
       "elementType": "labels",
       "stylers": [
-        { "visibility": "off" },
-        { "grayscale": 100 }
+        { "visibility": "off" }
       ]
-    },{
-      "featureType": "road",
-      "elementType": "geometry",
+    },
+    {
+      "featureType": "all",
+      "elementType": "geometry.fill",
       "stylers": [
+        { "visibility": "on" }
+      ]
+    },
+    {
+      "featureType": "all",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        { "visibility": "off" }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry.fill",
+      "stylers": [
+        { "visibility": "on" },
+        { "weight": 1 },
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "geometry.fill",
+      "stylers": [
+        { "visibility": "on" },
+        { "weight": 2 },
+        { "lightness": 10 }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [
+        { "visibility": "on" },
         { "weight": 3 },
-        { "visibility": "simplified" }
-      ]
-    },{
-      "featureType": "poi",
-      "elementType": "labels",
-      "stylers": [
-        { "visibility": "off" }
-      ]
-    },{
-      "featureType": "transit",
-      "elementType": "labels",
-      "stylers": [
-        { "visibility": "off" }
-      ]
-    },{
-      "featureType": "administrative",
-      "elementType": "labels",
-      "stylers": [
-        { "visibility": "off" }
-      ]
-    },{
-      "featureType": "water",
-      "elementType": "labels",
-      "stylers": [
-        { "visibility": "off" }
-      ]
-    },{
-      "featureType": "landscape",
-      "elementType": "labels",
-      "stylers": [
-        { "visibility": "off" }
+        { "lightness": 10 }
       ]
     }
   ];
 
+  // -37.821827, 144.962014
+
   var mapOptions = {
-    center: new google.maps.LatLng(-37.817708, 144.967302),
+    center: new google.maps.LatLng(-37.821827, 144.962014),
     zoom: 13,
     disableDefaultUI: true,
     scrollwheel: false,
