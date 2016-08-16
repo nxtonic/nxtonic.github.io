@@ -6,7 +6,7 @@ reference_link: http://nxtonic.github.io/idea-factory/
 ---
 Forgive me for getting "meta" for a moment, but I came up with this idea to generate entrepreneurially viable ideas.
 
-I also wanted to see how performant I could make a web application _without_ using any external libraries or frameworks. The result is pretty good, with it loading from __github.io__ in a time of `~250ms` if you have a good connection. I'm pretty happy with that.
+I also wanted to see how performant I could make a web application _without_ using any external libraries or frameworks. The result is pretty good, with it loading from github.io in a time of around 250ms if you have a good connection. I'm pretty happy with that.
 
 This was also good practice at dealing with the HTML5 history api and a few other little javascript tidbits that I'd never messed about with before. It's still in progress, but has been good fun so far.
 

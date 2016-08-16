@@ -1,0 +1,103 @@
+.resume, .resume-header {
+  padding: 6em 1em;
+}
+
+.resume-header {
+
+  hr {
+    margin: 1.5em auto;
+    width: 5%;
+  }
+
+  .portrait {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 0.25em solid;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    margin-bottom: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 0em;
+  }
+
+  .handle {
+    font-size: 1em;
+    margin-bottom: 0.25em;
+  }
+
+  .extra {
+    margin: 0 auto;
+
+    .gpg {
+      font-size: 0.5em;
+      font-weight: bold;
+      max-width: 16em;
+      margin: 0 auto;
+      font-family: "Menlo", monospace;
+    }
+  }
+
+}
+
+.resume {
+
+  h4, h5, h6 {
+    display: block;
+    border-bottom: 0.10em solid;
+    padding-bottom: 0.15em;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .item {
+    margin-bottom: 3em;
+    clear: both;
+    page-break-before: auto;
+    page-break-inside: auto;
+  }
+
+  .list {
+    display: block;
+
+    &.attributes .col {
+      width: 33.33%;
+      float: left;
+
+      ul {
+        list-style-type: circle;
+        list-style-position: inside;
+      }
+      li {
+        letter-spacing: 0.05rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    &.education .block,
+    &.experience .block {
+      margin-bottom: 1.5em;
+      letter-spacing: 0.025rem;
+
+      .date {
+        font-weight: bold;
+        float: left;
+        max-width: 5em;
+        // margin-right: 2em;
+      }
+      .description {
+        margin-left: 7em;
+      }
+    }
+  }
+}

@@ -36,3 +36,9 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
 }
+
+::selection {
+  background: color($yellow,300);
+  color: black;
+  opacity: 1;
+}
