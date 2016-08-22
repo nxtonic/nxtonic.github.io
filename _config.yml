@@ -16,7 +16,7 @@ email: nxtonic@gmail.com
 description: > #
   The personal website of Angus McMillan
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://nxtonic.github.io" # the base hostname & protocol for your site
+url: "https://nxtonic.github.io" # the base hostname & protocol for your site
 logo: "/static/img/logotype.svg"
 twitter:
   username: nxtonic

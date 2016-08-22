@@ -14,12 +14,12 @@ type: page
       {% assign work = site.work | sort:"date" | reverse %}
       {% for page in work %}
         <div class="post">
-          <a class="name" href="{{ page.url }}">{{ page.title }}</a>
+          <a class="name" href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
           <span class="date">{{ page.date | date: "%d %B, %Y"}}</span>
           <hr class="split"/>
           <p class="excerpt">
             {{ page.short_description | strip_newlines | remove: "." | truncatewords: 50 }}
-            <a class="wrap" href="{{ page.url }}">&rarr;</a>
+            <a class="wrap" href="{{ site.url }}{{ page.url }}">&rarr;</a>
           </p>
         </div>
       {% endfor %}

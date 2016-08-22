@@ -19,7 +19,7 @@ title: "the blog"
       </div>
       <h6>the awkwardness is real</h6>
       <hr/>
-      <a href="{{ site.baseurl }}">
+      <a href="{{site.url}}{{ site.baseurl }}">
         <h3>go to the homepage?</h3>
       </a>
       <h3>&macr;\_(&#12484;)_/&macr;</h3>
@@ -35,7 +35,7 @@ title: "the blog"
       {% endif %}
 
       <div class="post">
-        <a class="name" href="{{ post.url }}">{{ post.title }}</a>
+        <a class="name" href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
         <span class="date">{{ post.date | date: "%B %d"}}</span>
         <hr class="split"/>
         <p class="excerpt">
@@ -44,7 +44,7 @@ title: "the blog"
         {% else %}
           {{ post.excerpt | strip_newlines | strip_html | truncate: 240 }}
         {% endif %}
-          <a class="wrap" href="{{ post.url }}">&rarr;</a>
+          <a class="wrap" href="{{site.url}}{{ post.url }}">&rarr;</a>
         </p>
       </div>
 
