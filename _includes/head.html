@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta http-equiv="content-type" content="text/html; charset=utf-8;"/>
-  <title>{{ site.title }}</title>
+  {% if page.title %}<title>{{site.title}} - {{ page.title }}</title>{% elsif post.title %}<title>{{ post.title }}: {{ site.title }}</title>{% else site.title %}<title>{{ site.title }}</title>{% endif %}
   {% feed_meta %}
   <meta name="theme-color" content="#FFE163"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
