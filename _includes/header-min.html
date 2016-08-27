@@ -1,14 +1,12 @@
 <header class="min">
   <div class="box">
-    <div class="header-wrapper">
-      {% assign type = page.layout %}
-      {% case type %}
+    <div class="header-wrapper">{% assign type = page.layout %}{% case type %}
       {% when "post" %}
         {% assign up = "/blog/" %}
         {% when "work" %}
           {% assign up = "/work/" %}
         {% else %}
-          {% assign up = site.baseurl | append: "/" %}
+          {% assign up = site.baseurl | prepend: site.url %}
       {% endcase %}
       <a class="wrap" href="{{ up }}">
         <img class="header-logotype" src="{{site.url}}{{site.baseurl}}/static/img/logotype.svg" />

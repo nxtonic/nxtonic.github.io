@@ -24,9 +24,17 @@
 
   }
 
+  iframe {
+    display: none;
+  }
+
   header, section {
     page-break-inside: auto;
     padding: 2.5em 1em;
+  }
+
+  header.min {
+    padding: 4em 1em 4em;
   }
 
   section {
@@ -42,5 +50,22 @@
 
   footer {
     display: none;
+  }
+
+  .resume-header {
+    padding: 0em 1em;
+    margin: -2em auto -1em;
+  }
+
+  .resume {
+    padding: 4em 1em;
+  }
+
+  .resume-header .portrait {
+    display: none;
+  }
+
+  .resume .item {
+    page-break-inside: avoid;
   }
 }
