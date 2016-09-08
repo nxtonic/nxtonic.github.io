@@ -1,3 +1,12 @@
+{% if include.type == "resume" %}
+<div class="tool-icons align-left">{% for item in site.data.confident %}{% if item.url %}
+  <a class="wrap icon" target="_blank" href="{{item.url}}">
+    <img title="{{item.title}}" src="{{item.image_url}}">
+    <span>{{item.title}}</span>
+  </a>{% else %}
+  <img title="{{item.title}}" src="{{item.image_url}}">{% endif %}{% endfor %}
+</div>{% else %}
+
 <section>
   <div class="box">
     <h2 class="align-center">confident with...</h2>
@@ -8,4 +17,4 @@
       <img title="{{item.title}}" src="{{item.image_url}}">{% endif %}{% endfor %}
     </div>
   </div>
-</section>
+</section>{% endif %}

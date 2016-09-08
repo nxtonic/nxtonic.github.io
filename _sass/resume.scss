@@ -57,9 +57,43 @@
     text-align: justify;
   }
 
+  .print-message {
+    display: none;
+  }
+
   .item {
     margin-bottom: 3em;
     clear: both;
+
+    .tool-icons {
+      margin: 2rem auto;
+      margin-left: -2em;
+      margin-top: -0.75rem;
+      font-size: 0.75rem;
+
+      .icon {
+        display: inline-block;
+        // background-color: #ccc;
+        padding: 0 1rem;
+
+        & img {
+          margin: 1em;
+          margin-right: 0;
+          max-height: 3em;
+          width: 2em;
+        }
+
+        & span {
+          font-size: 1em;
+          margin-left: 1em;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .list {
@@ -95,6 +129,17 @@
       }
       .description {
         margin-left: 7em;
+
+        .description-extended {
+          margin-top: 1em;
+          font-weight: 400;
+
+          & p {
+            line-height: 1.35;
+            font-size: 0.85em;
+            letter-spacing: 0.0625em;
+          }
+        }
       }
     }
   }
