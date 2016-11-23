@@ -3,60 +3,60 @@
 
 - title: atom
   url: http://atom.io
-  image_url: http://svgporn.com/logos/atom.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/atom.svg
 
 - title: html5
   url: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
-  image_url: http://svgporn.com/logos/html-5.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg
 
 - title: css3
   url: https://developer.mozilla.org/en/docs/Web/CSS/CSS3
-  image_url: http://svgporn.com/logos/css-3.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg
 
 - title: sass
   url: http://sass-lang.com/
-  image_url: http://svgporn.com/logos/sass.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/sass.svg
 
 - title: markdown
   url: https://daringfireball.net/projects/markdown/
-  image_url: http://svgporn.com/logos/markdown.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/markdown.svg
 
 - title: terminal (zsh shell)
   url: http://ohmyz.sh
-  image_url: http://svgporn.com/logos/terminal.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/terminal.svg
 
 - title: bower
   url: http://bower.io
-  image_url: http://svgporn.com/logos/bower.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/bower.svg
 
 - title: git
   url: https://git-scm.com/
-  image_url: http://svgporn.com/logos/git-icon.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/git-icon.svg
 
 - title: javascript
   url: https://www.javascript.com/
-  image_url: http://svgporn.com/logos/javascript.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/javascript.svg
 
 - title: gulp.js
   url: http://gulpjs.com/
-  image_url: http://svgporn.com/logos/gulp.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/gulp.svg
 
 - title: angular.js
   url: https://angular.io/
-  image_url: http://svgporn.com/logos/angular-icon.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/angular-icon.svg
 
 - title: node.js
   url: https://nodejs.org/en/
-  image_url: http://svgporn.com/logos/nodejs-icon.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/nodejs-icon.svg
 
 - title: eslint
   url: http://eslint.org
-  image_url: http://svgporn.com/logos/eslint.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/eslint.svg
 
 - title: slack
   url: https://slack.com/
-  image_url: http://svgporn.com/logos/slack.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/slack.svg
 
 - title: trello
   url: https://trello.com/
-  image_url: http://svgporn.com/logos/trello.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/trello.svg

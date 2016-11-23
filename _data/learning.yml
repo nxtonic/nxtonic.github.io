@@ -3,28 +3,28 @@
 
 - title: docker
   url: https://www.docker.com/
-  image_url: http://svgporn.com/logos/docker.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/docker.svg
 
 - title: es6
   url: http://es6-features.org/
-  image_url: http://svgporn.com/logos/es6.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/es6.svg
 
 - title: kubernetes
   url: http://kubernetes.io/
-  image_url: http://svgporn.com/logos/kubernets.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/kubernets.svg
 
 - title: babel
   url: https://babeljs.io
-  image_url: http://svgporn.com/logos/babel.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/babel.svg
 
 - title: google analytics
   url: https://www.google.com/analytics/
-  image_url: http://svgporn.com/logos/google-analytics.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/google-analytics.svg
 
 - title: mailchimp
   url: http://mailchimp.com/
-  image_url: http://svgporn.com/logos/mailchimp-freddie.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/mailchimp-freddie.svg
 
 - title: travis-ci
   url: https://travis-ci.com/
-  image_url: http://svgporn.com/logos/travis-ci.svg
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/travis-ci.svg
