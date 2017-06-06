@@ -21,13 +21,9 @@
   url: https://daringfireball.net/projects/markdown/
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/markdown.svg
 
-- title: terminal (zsh shell)
+- title: terminal
   url: http://ohmyz.sh
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/terminal.svg
-
-- title: bower
-  url: http://bower.io
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/bower.svg
 
 - title: git
   url: https://git-scm.com/
@@ -37,10 +33,6 @@
   url: https://www.javascript.com/
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/javascript.svg
 
-- title: gulp.js
-  url: http://gulpjs.com/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/gulp.svg
-
 - title: angular.js
   url: https://angular.io/
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/angular-icon.svg
@@ -48,10 +40,6 @@
 - title: node.js
   url: https://nodejs.org/en/
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/nodejs-icon.svg
-
-- title: eslint
-  url: http://eslint.org
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/eslint.svg
 
 - title: slack
   url: https://slack.com/

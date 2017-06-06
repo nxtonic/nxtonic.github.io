@@ -5,26 +5,22 @@
   url: https://www.docker.com/
   image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/docker.svg
 
-- title: es6
-  url: http://es6-features.org/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/es6.svg
+- title: ruby
+  url: https://ruby-lang.org/
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ruby.svg
 
-- title: kubernetes
-  url: http://kubernetes.io/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/kubernets.svg
+- title: go
+  url: https://golang.org/
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/gopher.svg
 
-- title: babel
-  url: https://babeljs.io
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/babel.svg
+- title: python
+  url: https://www.python.org/
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/python.svg
 
-- title: google analytics
-  url: https://www.google.com/analytics/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/google-analytics.svg
+- title: lua
+  url: https://www.lua.org/
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/lua.svg
 
-- title: mailchimp
-  url: http://mailchimp.com/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/mailchimp-freddie.svg
-
-- title: travis-ci
-  url: https://travis-ci.com/
-  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/travis-ci.svg
+- title: debian
+  url: https://debian.org/
+  image_url: https://s3-us-west-2.amazonaws.com/svgporn.com/logos/debian.svg
