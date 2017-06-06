@@ -107,6 +107,7 @@ $backgrounds: (
 
 @each $bg in map-keys(map-get($backgrounds, list)) {
   .background-#{$bg} {
+    background: #222;
     background: to-string(map-fetch($backgrounds, list $bg images));
     color: map-fetch($backgrounds, list $bg text-color);
     background-attachment: fixed;
