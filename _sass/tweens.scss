@@ -1,42 +1,33 @@
 @import "colours";
 
+
+// tween length
+$t: .2s;
+
 body {
-  background-color: #222;
-  color: #f3f3f3;
+  transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
 }
 
 header {
-  background-color: #1e1e1e;
+  transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
 }
 
 @media (min-width: 385px) {
   header {
-    background-color: #1e1e1e;
+    transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
   }
 }
 
 section {
-  &:nth-of-type(2n) {
-    background-color: #232323;
-  }
-
-  &:nth-of-type(2n + 1) {
-    background-color: #1e1e1e;
-  }
+  transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
 }
 
 .tool-icons {
   & img {
-    background-color: #fff;
-    filter: brightness(35%);
-    padding: 4px;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-    &:hover, &:active {
-      filter: brightness(100%);
-      transform: scale(2);
-    }
+    transition: padding $t ease-in-out,
+                background-color $t ease-in-out,
+                filter $t ease-in-out,
+                transform $t ease-in-out;
   }
 }
 
@@ -81,17 +72,10 @@ $backgrounds: (
 
 @each $bg in map-keys(map-get($backgrounds, list)) {
   .background-#{$bg}, section.background-#{$bg} {
-    background: to-string(map-fetch($backgrounds, list $bg images));
-    color: map-fetch($backgrounds, list $bg text-color);
-    background-attachment: fixed;
-    background-size: cover;
-    background: #262626;
-    & * {
-      filter: none;
-    }
+    transition: background $t ease-in-out;
   }
 }
 
 #map, header .header-portrait, header .header-logotype {
-  filter: saturate(0%) brightness(95%) invert(100%);
+  transition: filter $t ease-in-out;
 }
