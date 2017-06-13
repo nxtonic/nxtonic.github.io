@@ -39,6 +39,8 @@ feed:
   path: atom.xml
 kramdown:
   input: GFM
+sass:
+  style: compressed
 
 # Front matter defaults
 collections:

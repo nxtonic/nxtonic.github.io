@@ -4,6 +4,9 @@
 // tween length
 $t: .5s;
 
+// ui length
+$b: .25s;
+
 body {
   transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
 }
@@ -24,10 +27,10 @@ section {
 
 .tool-icons {
   & img {
-    transition: padding $t ease-in-out,
-                background-color $t ease-in-out,
-                filter $t ease-in-out,
-                transform $t ease-in-out;
+    transition: padding $b ease-in-out,
+                background-color $b ease-in-out,
+                filter $b ease-in-out,
+                transform $b ease-in-out;
   }
 }
 

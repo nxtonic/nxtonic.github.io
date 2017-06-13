@@ -27,13 +27,14 @@ section {
 
 .tool-icons {
   & img {
-    background-color: #fff;
+    background-color: #bbb;
     filter: brightness(35%);
     padding: 4px;
     border-radius: 4px;
     box-sizing: border-box;
 
     &:hover, &:active {
+      background-color: #fff;
       filter: brightness(100%);
       transform: scale(2);
     }
