@@ -2,10 +2,10 @@
 
 
 // tween length
-$t: .5s;
+$t: .2s;
 
 // ui length
-$b: .25s;
+$b: .2s;
 
 body {
   transition: background-color $t ease-in-out, background $t ease-in-out, color $t ease-in-out;
