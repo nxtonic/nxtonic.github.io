@@ -11,27 +11,31 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: "@nxtonic"
+title: "nxtonic"
 email: nxtonic@gmail.com
 repository: nxtonic/nxtonic.github.io
 description: > #
   The personal website of Angus McMillan
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nxtonic.github.io" # the base hostname & protocol for your site
-logo: "/static/img/logotype.svg"
+path:
+  logo: "/static/img/logotype.svg"
+  media: "/media/"
 twitter:
   username: nxtonic
 github:
   username: nxtonic
+  realname: Angus McMillan
 
 # Build settings
 timezone: Australia/Melbourne
-permalink: "/blog/:year/:month/:categories/:title/"
-gems:
+permalink: "/:year/:title/"
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
   - jemoji
 markdown: kramdown
 highlighter: rouge
@@ -42,28 +46,4 @@ kramdown:
 sass:
   style: compressed
 
-# Front matter defaults
-collections:
-  work:
-    output: true
-    permalink: /work/:path/
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      author: "Angus McMillan"
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: post
-      comments: true
-  -
-    scope:
-      path: "_work"
-      type: "work"
-    values:
-      categories: work
-      layout: work
+include: ["_pages"]

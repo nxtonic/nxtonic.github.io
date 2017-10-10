@@ -1,0 +1,46 @@
+@keyframes background-cycle {
+  0% {
+    background-color: color($blue, a400);
+  }
+  25% {
+    background-color: color($green);
+  }
+  50% {
+    background-color: color($amber);
+  }
+  75% {
+    background-color: color($pink);
+  }
+  100% {
+    background-color: color($blue, a400);
+  }
+}
+
+@keyframes textIntro {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateZ(0) translateY(-1.5rem);
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navScrolled {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

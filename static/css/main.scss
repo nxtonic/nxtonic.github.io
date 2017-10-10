@@ -2,14 +2,34 @@
 # main.scss
 ---
 
-@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import "colours";
+@import "functions";
+
+$page-align: left;
+$width: 700px;
+$theme-color: $grey;
+
+$text-color: #000;
+$bg-color: #fff;
+
+$header-text-color: $text-color;
+$header-background-color: $bg-color;
+
+$body-background-color: $bg-color;
+
+$font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$font-sans: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Comic Sans MS" , sans-serif;
+
+$footer-link-normal: set-color-basis($text-color, fade-out($text-color, .2), fade-out($text-color, .25));
+$footer-link-hover: set-color-basis($text-color, fade-out($text-color, .5), fade-out($text-color, .55));
+
+
 @import "reset";
-@import "basics";
+@import "block";
+@import "posts";
 @import "page";
-@import "section";
-@import "typography";
 @import "utils";
-@import "resume";
 @import "syntax_highlighting";
-@import "print";
-@import "tweens";
+@import "typography";
+@import "markdown";
+@import "base";

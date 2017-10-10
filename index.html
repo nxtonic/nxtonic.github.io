@@ -1,10 +1,24 @@
 ---
 layout: default
 ---
-{% include about.html %}
-{% include confident.html %}
-{% include learning.html %}
-{% include listings.html %}
-{% include quote.html %}
-{% include map.html %}
-{% include contact.html %}
+<section>
+  <div class="box">
+    <h2>recent posts</h2>
+    <div class="posts">
+      {% for post in site.posts limit: 5 %}<div class="post">
+          <div class="title">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <div class="date">
+            <i class="far fa-calendar-alt"></i> {{ post.date | date: "%A, %d %B %Y" }}
+          </div>
+          <div class="excerpt">
+            {{ post.excerpt | truncatewords: 40 | strip_html }}
+          </div>
+        </div>{% endfor %}
+      {% if site.posts.size >= 5 %}<div class="post">
+        <a class="wrap button" href="{{site.url}}{{site.baseurl}}/archive">see more in archive &xrarr;</a>
+      </div>{% endif %}{% if site.posts.size < 1 %}<div class="post">there are no posts!</div>{% endif %}
+    </div>
+  </div>
+</section>

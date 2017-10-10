@@ -1,0 +1,179 @@
+section {
+  .posts {
+    text-align: $page-align;
+    .post {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .index {
+        font-weight: normal;
+        font-size: 2rem;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        overflow-wrap: break-word;
+        line-height: 1.4;
+
+        a {
+          border-bottom: none;
+          color: $text-color;
+
+          &:visited {
+            color: set-color-basis($bg-color, darken($text-color, 20%), lighten($text-color, 20%));
+          }
+
+          &:hover {
+            color: set-color-basis($bg-color, darken($text-color, 10%), lighten($text-color, 10%));
+          }
+        }
+      }
+
+      .date {
+        font-size: .8rem;
+        font-weight: 400;
+        color: set-color-basis($bg-color, darken($text-color, 35%), lighten($text-color, 35%));
+      }
+
+      .excerpt {
+        margin-top: .5em;
+        color: set-color-basis($bg-color, darken($text-color, 50%), lighten($text-color, 50%));
+        font-size: .85em;
+      }
+    }
+
+    &.archive {
+      .year {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1;
+        margin: 2.5rem 0 .75rem;
+        color: lighten($text-color, 15%);
+
+        &:first-of-type {
+          margin-top: 2.5;
+        }
+      }
+
+      .post {
+        margin-bottom: .25rem;
+
+        .title {
+          font-size: 1.25rem;
+          font-weight: 500;
+
+          @media #{$query-mobile} {
+            margin-bottom: 1em;
+          }
+
+          .category {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: .65em;
+            padding: .0em .25em;
+            margin: 0;
+            margin-top: -.3em;
+            border-radius: .25em;
+            background: color($theme-color, 100);
+            color: set-color-basis($bg-color, darken($text-color, 50%), $text-color);
+
+            &.opinion {
+              color: color($red,700);
+              background: color($red,100);
+            }
+
+            &.tech {
+              color: color($orange,700);
+              background: color($orange,100);
+            }
+
+            &.dev {
+              color: color($indigo,700);
+              background: color($indigo,100);
+            }
+
+            &.javascript {
+              color: color($yellow,700);
+              background: color($yellow,100);
+            }
+
+            &.life {
+              color: color($green,700);
+              background: color($green,100);
+            }
+
+            &.project {
+              color: color($blue,700);
+              background: color($blue,100);
+            }
+
+            &.misc {
+              color: color($purple,700);
+              background: color($purple,100);
+            }
+          }
+        }
+
+        .inline-title {
+          margin-right: 0.5em;
+          font-size: 0.75em;
+          vertical-align: text-bottom;
+
+          @media #{$query-mobile} {
+            display: block;
+          }
+        }
+
+        .inline-date {
+          color: fade-out($text-color, .75);
+          margin-right: 0.75em;
+
+          @media #{$query-mobile} {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &.post {
+
+    hr {
+      margin: 2em 0;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: .25em;
+      line-height: 1.2;
+      text-align: left;
+
+      a {
+        border-bottom: none;
+        color: color($theme-color, 800);
+
+        &:visited {
+          color: color($theme-color, 500);
+        }
+
+        &:hover {
+          color: color($theme-color, 400);
+        }
+      }
+    }
+
+    .date {
+      font-size: .9rem;
+      font-weight: 400;
+    }
+
+    .content {
+      margin-top: 1.4em;
+      font-size: .9rem;
+    }
+  }
+}

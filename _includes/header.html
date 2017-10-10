@@ -1,17 +1,20 @@
 <header>
   <div class="box">
-    <div class="header-wrapper">
-      <a class="wrap" href="{{site.url}}{{site.baseurl}}/">
-        <img class="header-logotype" src="{{site.url}}{{site.baseurl}}/static/img/logotype.svg" />
-      </a>
-      <div class="header-text">
-        <h3 class="header-name">{{ site.data.author.first_name }} {{ site.data.author.last_name }}</h3>
-        <div class="clearfix"></div>
-        <a class="wrap" target="_blank" href="https://github.com/{{ site.data.author.github }}">
-          <h3 class="header-profession">@{{ site.data.author.github }}</h3>
+    <div class="upper">
+      <div class="peer image">
+        <a class="wrap" href="{{site.url}}{{site.baseurl}}">
+          <img class="portrait" src="{{site.url}}{{site.baseurl}}/static/img/portrait.jpg" />
+          <img class="logo" src="{{site.url}}{{site.baseurl}}/static/img/logotype.svg" />
         </a>
       </div>
-      <div class="clearfix"></div>
+      <div class="peer message">
+        <div class="name">
+          <a href="{{site.url}}{{site.baseurl}}" class="wrap">{{site.github.realname}}</a>
+        </div>
+        <div class="tag">
+          <a href="https://github.com/{{site.github.username}}" class="wrap" target="_blank">@{{site.github.username}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>

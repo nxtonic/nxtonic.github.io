@@ -31,3 +31,24 @@ a.wrap {
 .icon-big {
   font-size: 2rem;
 }
+
+#shade {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-color: fade-out(color($blue-grey, 900), .5);
+  pointer-events: none;
+  z-index: 200;
+
+  &.is-active {
+    background-color: fade-out(color($blue-grey,900), .1);
+    background-blend-mode: overlay;
+  }
+}
+
+[class^="fa-"],
+[class*="fa-"] {
+  margin-right: .15em;
+}

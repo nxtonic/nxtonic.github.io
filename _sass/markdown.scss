@@ -1,34 +1,71 @@
 .markdown {
-
-  padding-bottom: 1rem;
+  width: 100%;
+  font-size: 1rem;
 
   :last-child {
     margin-bottom: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0 -0.05em 0.5em;
-    letter-spacing: 0.05em;
+    margin: 0 -0.05em 1.25em;
+    margin-bottom: 1.25em;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   h1 {
-    border-bottom: 0.1em solid;
-    display: inline;
-    width: 100%;
+    font-size: 1.602rem;
   }
 
   h2 {
-    border-bottom: 0.1em solid;
-    display: inline-block;
+    font-size: 1.424rem;
   }
 
+  h3 {
+    font-size: 1.266rem;
+    font-weight: 500;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: .75em;
+  }
+
+  h4, h5, h6 {
+    font-size: 1.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: .75rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
   p {
-    text-align: justify;
-    line-height: 2;
     margin-bottom: 2em;
+
+    & + ul, & + ol {
+      margin: -1em auto 2em;
+    }
+
+    & > img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   img.emoji {
+    display: inline-block;
     font-size: 1em;
     line-height: 1;
     height: 1.25em;
@@ -36,15 +73,32 @@
     vertical-align: text-bottom;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   a {
     border: none !important;
+
+    &[href*='//']:after {
+      content: '\16dd';
+      vertical-align: super;
+      font-size: .75em;
+      margin-left: .15em;
+    }
   }
 
   blockquote {
     padding: 0;
-    padding: 1.5em;
+    padding: .8em 1.2em;
     border-radius: 4px;
-    background-color: rgba(0,0,0,0.025);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: fade-out($text-color, .9);
+
+    p {
+      margin-bottom: .75em;
+    }
 
     cite {
       text-align: right;
@@ -61,6 +115,10 @@
       width: 100%;
     }
 
+    .highlighter-rouge {
+      background-color: color($blue-grey, 700);
+    }
+
     :last-child {
       margin-bottom: 0;
     }
@@ -68,12 +126,25 @@
 
   ul, ol {
     margin: 0em auto 2em;
+    // border-radius: .3em;
+
+    & + p {
+      margin: -1em auto 2em;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
 
     ul, ol {
       margin: 0.5em 0;
+
+      &:last-child {
+        margin-bottom: 0.5em;
+      }
     }
+
     li {
-      letter-spacing: 0.05em;
       margin-left: -0.05em;
     }
   }
@@ -90,9 +161,13 @@
 
   table {
     max-width: 100%;
+    // width: 100%;
+    margin-bottom: 1.5rem;
+    border: .1rem solid;
+
     thead {
       font-weight: bold;
-      border-bottom: 0.2em solid;
+      border-bottom: 0.1rem solid;
       tr {
         line-height: 3;
       }
@@ -100,29 +175,35 @@
 
     th:not(:first-child):not(:last-child),
     td:not(:first-child):not(:last-child) {
-      border-left: 0.2rem solid;
+      border-left: 0.1rem solid;
       padding-left: 1rem;
       padding-right: 1rem;
-      border-right: 0.2rem solid;
+      border-right: 0.1rem solid;
     }
 
     th:first-child, td:first-child {
+      padding-left: 1rem;
       padding-right: 1rem;
-      border-right: 0.2rem solid;
+      border-right: 0.1rem solid;
     }
 
     th:last-child, td:last-child {
       padding-left: 1rem;
-      border-left: 0.2rem solid;
+      padding-right: 1rem;
+      border-left: 0.1rem solid;
     }
 
     tbody {
       tr:first-child td {
-        padding-top: 1em;
+        padding-top: .5em;
+      }
+
+      tr:last-child td {
+        padding-bottom: .5em;
       }
 
       tr td {
-        line-height: 3;
+        // line-height: 3;
       }
     }
 
@@ -176,4 +257,57 @@
     }
 
   }
+
+  .face {
+    margin-top: 2rem;
+    border-radius: .5rem;
+    display: block;
+    width: 65%;
+
+    @media #{$query-mobile} {
+      width: 100%;
+    }
+  }
+
+  iframe {
+    max-width: 100%;
+
+    &[src*='youtube.com'] {
+      width: 100%;
+      background-color: black;
+    }
+  }
+
+  iframe + blockquote {
+    font-style: italic;
+    background: none;
+    color: fade-out($text-color, .5);
+    padding: 0em;
+    font-size: .9em;
+    margin-top: -2.5em;
+    margin-bottom: 2.5em;
+  }
+
+  figure {
+    margin: 2rem 0;
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: .5em;
+      font-size: .65rem;
+      color: fade-out($text-color, .25);
+      font-style: italic;
+      text-align: center;
+    }
+  }
+
+
+  twitterwidget {
+    margin: 2.5em auto !important;
+  }
+
 }

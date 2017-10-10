@@ -1,0 +1,18 @@
+---
+layout: default
+title: archive
+permalink: "/archive"
+---
+<section>
+  <div class="box">
+    <h2>{{ page.title }}</h2>
+    <div class="posts archive">{% for post in site.posts %}{% assign thisYear = post.date | date: "%Y" %}{% if thisYear != currentYear %}<div class="year">{{ thisYear }}</div>{% assign currentYear = thisYear %}{% endif %}
+        <div class="post">
+          <div class="title">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"><span class="inline-date">{{ post.date | date: "%d %b %Y" }}</span><span class="inline-title">{{ post.slug }} – {{ post.title }}{% for cat in post.categories %}</span><span class="category {{cat | remove: ','}}">{{ cat | remove: "," }}</span>
+              {% endfor %}</a>
+          </div>
+        </div>{% endfor %}{% if site.posts.size < 1 %}<div>there are no posts!</div>{% endif %}
+    </div>
+  </div>
+</section>

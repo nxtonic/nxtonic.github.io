@@ -1,0 +1,41 @@
+@import "colours";
+@import "media-queries";
+
+:root {
+  font-size: 20px;
+
+  @media #{$query-narrow} {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 200px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 18px;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: $font-sans;
+  background-color: $body-background-color;
+  line-height: 1.75;
+}
+
+:link {
+  color: set-color-basis($bg-color, color($blue, 300), color($blue));
+}
+
+:visited {
+  color: set-color-basis($bg-color, color($purple, 300), color($purple));
+}
+
+::selection {
+  background: set-color-basis($text-color, $text-color, $text-color);
+  color: set-color-basis($bg-color, $bg-color, $bg-color)
+}

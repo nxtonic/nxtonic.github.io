@@ -1,27 +1,22 @@
----
-layout: page-min
----
-<section class="post-header">
-  <div class="box align-center">
-    <h2>{{ page.title }}</h2>
-    <p>&bull; {{ page.date | date_to_long_string }} &bull;</p>
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header-min.html %}
+{% assign wordCount = page.content | number_of_words %}
+<section class="post">
+  <div class="box">
+    <div class="title">{{ page.title }}</div>
+    <div class="date">
+      <i class="far fa-calendar-alt"></i> {{ page.date | date: "%A, %d %B %Y" }}
+    </div>
+    <div class="content markdown">
+      {{ content }}
+    </div>
   </div>
 </section>
-
-<section class="post-content">
-<main>
-<div class="box markdown">
-{{ content }}
-{% assign p = content | strip_newlines %}{% if p == "" %}
-<div class="align-center">
-<h3>the content is missing :/</h3>
-<hr/>
-<div class="full-width">
-<img src="https://media.giphy.com/media/jeXiz1RAvzX44/giphy.gif"/>
-</div>
-</div>{% endif %}
-</div>
-</main>
-</section>{% if page.comments %}
-{% unless p == "" %}
-{% include disqus.html %}{% endunless %}{% endif %}
+{% include disqus.html %}
+{% include footer.html %}
+{% include analytics.html %}
+</body>
+</html>

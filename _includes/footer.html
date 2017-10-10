@@ -1,11 +1,29 @@
 <footer>
   <div class="box">
-    <div class="social-icons">
-      <a title="twitter" href="http://twitter.com/nxtonic"><i class="icon icon-big ion-social-twitter"></i></a>
-      <a title="github" href="http://github.com/nxtonic"><i class="icon icon-big ion-social-github"></i></a>
-      <a title="linkedin" href="http://au.linkedin.com/in/nxtonic"><i class="icon icon-big ion-social-linkedin"></i></a>
-      <a title="codepen" href="http://codepen.io/nxtonic"><i class="icon icon-big ion-social-codepen"></i></a>
+    <hr>
+    <div class="social-links">
+      <a title="about me" href="{{site.url}}{{site.baseurl}}/about" rel="me">
+        <i class="fas fa-user"></i>about</a>
+      <a title="send mail" href="#send-mail" rel="me" send-mail>
+        <i class="fas fa-envelope"></i>mail</a>
+      <a title="keybase" href="https://keybase.io/nxtonic" rel="me" target="_blank">
+        <i class="fas fa-key"></i>keybase</a>
+      <a title="twitter" href="https://twitter.com/nxtonic" rel="me" target="_blank">
+        <i class="fab fa-twitter"></i>twitter</a>
+      <a title="github" href="https://github.com/nxtonic" rel="me" target="_blank">
+        <i class="fab fa-github"></i>github</a>
+      <a title="linkedin" href="https://au.linkedin.com/in/nxtonic" rel="me" target="_blank">
+        <i class="fab fa-linkedin"></i>linkedin</a>
+      <a title="codepen" href="https://codepen.io/nxtonic" rel="me" target="_blank">
+        <i class="fab fa-codepen"></i>codepen</a>
     </div>
-    <!-- <div class="footnote">&bull; made with <a class="wrap" target="_blank" href="http://jekyllrb.com/">jekyll</a> &bull;</div> -->
   </div>
 </footer>
+<script>
+  document.querySelector('[send-mail]').addEventListener('click', function (e) {
+    e.preventDefault();
+    var s="bWFpbHRvOm54dG9uaWNAZ21haWwuY29tP3N1YmplY3Q9SGVsbG8h";
+    window.location.href=window.atob(s);
+    return false;
+  });
+</script>

@@ -17,3 +17,11 @@
     @return $value;
   }
 }
+
+@function set-color-basis($color, $light: #fff, $dark: #000) {
+  @if (lightness($color) > 50) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

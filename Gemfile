@@ -1,3 +1,2 @@
 source 'https://rubygems.org'
-gem 'json', github: 'flori/json', branch: 'v1.8'
-gem 'github-pages', '~> 112'
+gem 'github-pages', '~> 177', group: :jekyll_plugins

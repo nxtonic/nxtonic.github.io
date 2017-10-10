@@ -1,49 +1,94 @@
+@import "media-queries";
+
 h1 {
   font-size: 4rem;
-  letter-spacing: 0.05em;
+  margin-bottom: .25em;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 2rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
+  margin-bottom: .5em;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.75rem;
-  letter-spacing: 0.05em;
+  margin-bottom: .5em;
 }
 
 h4 {
   font-size: 1.5rem;
+  margin-bottom: .75em;
 }
 
 h5 {
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: .75em;
 }
 
 h6 {
   font-size: 1.15rem;
   opacity: 0.75;
+  margin-bottom: .75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-kerning: normal;
+  line-height: 1;
 }
 
 a {
   text-decoration: none;
-  padding-bottom: 0.25em;
-  border-bottom: 0.125em solid;
+  padding-bottom: 0.1em;
+
+  &:link:hover {
+    font-style: normal;
+    text-decoration: underline;
+  }
+
+  &.button {
+    $button-bg: color($blue, a400);
+    $button-text: color($grey,50);
+
+    display: inline-block;
+    border: .1em solid;
+    padding: .2em .6em;
+    color: $button-bg;
+
+    &:hover {
+      color: $button-text;
+      border: .1em solid $button-bg;
+      background: $button-bg;
+    }
+  }
 }
 
 p {
-  margin-bottom: 1rem;
-  line-height: 1.75;
-  letter-spacing: 0.05rem;
+  margin-bottom: 1.5em;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
-li {
-  margin-bottom: 0.5rem;
-  line-height: 1.75;
+ul, ol {
+  text-align: left;
+  margin-left: 1.4rem;
+}
+
+ul {
   list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
 }
 
 em {
@@ -59,6 +104,12 @@ blockquote {
   margin-bottom: 3.5rem;
 }
 
+sup {
+  font-size: .65em;
+  white-space: nowrap;
+  vertical-align: super;
+}
+
 blockquote img {
   box-sizing: border-box;
   margin: 0.5rem 0 1rem;
@@ -70,11 +121,40 @@ blockquote img {
 hr {
   display: block;
   margin: 3em auto;
-  width: 10%;
+  width: 5rem;
   border: none;
-  border-bottom: 2px solid rgba(0,0,0,0.25);
+  border-bottom: 2px solid fade-out($text-color, .85);
+
+  &.left {
+    margin: 3em 0;
+  }
+
+  &.right {
+    margin: 3em 0 3em auto;
+  }
 }
 
 iframe {
   margin-bottom: 2rem;
+}
+
+.no-break {
+  display: inline-block;
+  white-space: nowrap;
+
+  @media #{$query-mobile} {
+    display: inline;
+    white-space: normal;
+  }
+}
+
+.token {
+  background-color: color($blue-grey,900);
+  color: color($blue-grey,50);
+  padding: 0 0.3em;
+  border-radius: 0.15em;
+  margin: 0 0.1em;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 0.85em;
 }
