@@ -319,8 +319,7 @@ footer {
   }
 
   .social-links {
-    margin: 0 auto;
-    margin-left: -.25rem;
+    margin: 0 -.5rem;
     font-weight: 500;
 
     [class^="socicon-"],
@@ -351,6 +350,7 @@ footer {
       border-bottom: none;
       color: $footer-link-normal;
       white-space: nowrap;
+      display: inline-block;
       cursor: pointer;
 
       &:visited {
