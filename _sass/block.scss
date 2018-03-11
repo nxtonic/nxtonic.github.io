@@ -108,6 +108,10 @@ header {
     color: set-color-basis($header-background-color, $header-text-color, $header-text-color);
     background-color: $header-background-color;
 
+    &.mono {
+      padding: 1.5rem 0 .75rem;
+    }
+
     .image {
       //overflow: hidden;
       border-radius: 50%;
@@ -198,13 +202,21 @@ header.min.scrolled {
 }
 
 header.min.scrolled + .spacer {
-  height: 6em;
+  height: 6rem;
   display: block;
   position: relative;
   background-color: $header-background-color;
 
   @media #{$query-narrow} {
     height: 9rem;
+  }
+}
+
+header.min.scrolled.mono + .spacer {
+  height: 5.25rem;
+
+  @media #{$query-narrow} {
+    height: 8.5rem;
   }
 }
 
