@@ -12,7 +12,9 @@ function initialize() {
       "featureType": "all",
       "elementType": "geometry.fill",
       "stylers": [
-        { "visibility": "on" }
+        { "visibility": "on" },
+        { "saturation": -100 },
+        { "lightness": -65 }
       ]
     },
     {

@@ -170,7 +170,10 @@ header {
       padding: 0.65rem 0;
       right: 0;
       z-index: 100;
-      box-shadow: 0 0 1rem fade-out(set-color-basis($bg-color, darken($bg-color, 50%), invert($bg-color)), .9);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      background: linear-gradient($header-background-color 20%, fade-out($header-background-color, .25) 100%);
+      //box-shadow: 0 0 1rem fade-out(set-color-basis($bg-color, darken($bg-color, 50%), invert($bg-color)), .9);
 
       & .message {
         font-size: .75rem;
@@ -178,6 +181,10 @@ header {
 
       & .box .image {
         margin-right: .5rem;
+
+        @media #{$query-narrow} {
+          margin-right: 0.75rem;
+        }
       }
 
       & .image .logo {

@@ -9,8 +9,8 @@ $page-align: left;
 $width: 700px;
 $theme-color: $grey;
 
-$text-color: #000;
-$bg-color: #fff;
+$text-color: #eee;
+$bg-color: darken(color($blue-grey, 900), 10%);
 
 $header-text-color: $text-color;
 $header-background-color: $bg-color;

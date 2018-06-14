@@ -24,11 +24,11 @@ section {
           color: $text-color;
 
           &:visited {
-            color: set-color-basis($bg-color, darken($text-color, 20%), lighten($text-color, 20%));
+            color: set-color-basis($bg-color, fade-out($text-color, .2), fade-out($text-color, .45));
           }
 
           &:hover {
-            color: set-color-basis($bg-color, darken($text-color, 10%), lighten($text-color, 10%));
+            color: set-color-basis($bg-color, fade-out($text-color, .1), fade-out($text-color, .1));
           }
         }
       }
@@ -36,12 +36,12 @@ section {
       .date {
         font-size: .8rem;
         font-weight: 400;
-        color: set-color-basis($bg-color, darken($text-color, 35%), lighten($text-color, 35%));
+        color: set-color-basis($bg-color, fade-out($text-color, .20), fade-out($text-color, .2));
       }
 
       .excerpt {
         margin-top: .5em;
-        color: set-color-basis($bg-color, darken($text-color, 50%), lighten($text-color, 50%));
+        color: set-color-basis($bg-color, fade-out($text-color, .35), fade-out($text-color, .35));
         font-size: .85em;
       }
     }
