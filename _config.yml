@@ -47,3 +47,10 @@ sass:
   style: compressed
 
 include: ["_pages"]
+
+defaults:
+  -
+    scope: 
+      path: "_posts"
+    values:
+      description: "An excellent blog post about some great stuff, written by Angus McMillan"
